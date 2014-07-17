@@ -3,7 +3,7 @@
 ------
 
 ## 1）组件的文件夹结构是什么样的？
-#### 组件的文件结构 [结构图](images/moduletree.png)对比业务的文件结构 [结构图](images/businesstree.png)
+#### 组件的文件结构![image](images/moduletree.png)对比业务的文件结构![image](images/businesstree.png)
 
 #### 可知业务组件多了` src `文件夹和index.js文件。
 
@@ -13,7 +13,7 @@
 
 
 ## 3）为什么要生成两个index.js？
-#### 在业务组件中[结构图](images/twoindex.png)
+#### 在业务组件中![image](images/moduletree.png)
 #### 多出了两个index.js 
  > * vendor/components/cutpic/index.js 是为了模仿用户行为（从bower中直接下载组件）。
  > * 而下面的index.js是真正提供给用户用的。
