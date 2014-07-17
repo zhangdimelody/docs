@@ -13,7 +13,7 @@
 
 
 ## 3）为什么要生成两个index.js？
-#### 在业务组件中![image](images/moduletree.png)
+#### 在业务组件中![image](images/twoindex.png)
 #### 多出了两个index.js 
  > * vendor/components/cutpic/index.js 是为了模仿用户行为（从bower中直接下载组件）。
  > * 而下面的index.js是真正提供给用户用的。
