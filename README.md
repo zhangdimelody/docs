@@ -17,6 +17,8 @@
 #### ![image](images/twoindex.png)
 #### 多出了两个index.js 
  > * vendor/components/cutpic/index.js 是为了模仿用户行为（从bower中直接下载组件）。
+ ##### 模仿用户行为指模仿业务开发时引用组件的过程如下图：
+ ##### ![image](images/contract.png) ![image](images/config.png)
  > * 而下面的index.js是真正提供给用户用的。
 
 
@@ -41,7 +43,7 @@
 ````
 
 #### preprocess中定义了两个任务：build、dist。
-#### 意思是：将src中的文件编译一份分别放在 'app/scripts/vendor/components/cutpic/index.js' 和 'index.js'下。
+#### 意思是：将src中的文件编译一份分别放在 app/scripts/vendor/components/cutpic/index.js 和 index.js下。
 #### src/index.js的内容如下：
 ````
 define(['talent'],function(talent) {
@@ -57,7 +59,8 @@ define(['talent'],function(talent) {
 ## 5）如何处理组件所依赖的第三方库或组件？
 #### 有两种情况：
  > * 组件依赖的第三方可以直接被使用或被其他组件所依赖
-##### 将第三方库先作为一个组件放入bower中，在组件需要用时，同业务开发一样使用。
+##### 将第三方库先作为一个组件放入bower中，在组件需要用时，同业务开发一样使用。 
 
  > * 组件依赖的第三方只有此组件会使用
 ##### 将第三方库的代码直接加入组件当中。
+##### 例如：头像剪裁组件依赖的jquery.Jcrop第三方库，该库不能被独立使用或被其他组件依赖，故将其通过 @include js/jquery.Jcrop.js 进行引入，图见。
