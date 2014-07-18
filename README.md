@@ -20,6 +20,7 @@
 ##### 模仿用户行为指模仿业务开发时引用组件的过程如下图：
 ##### ![image](images/contract.png) 
 ##### ![image](images/config.png)
+
  > * 而下面的index.js是真正提供给用户用的。
 
 
