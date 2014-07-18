@@ -17,7 +17,7 @@
 #### ![image](images/twoindex.png)
 #### 多出了两个index.js 
  > * vendor/components/cutpic/index.js 是为了模仿用户行为（从bower中直接下载组件）。
- 模仿用户行为指模仿业务开发时引用组件。过程如下图：
+##### 模仿用户行为指模仿业务开发时引用组件。过程如下图：
 ![image](images/contract.png) 
 ##### ![image](images/config.png)
 
