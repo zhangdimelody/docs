@@ -67,3 +67,4 @@ define(['talent'],function(talent) {
 ##### 将第三方库的代码直接加入组件当中。
 ##### 例如：头像剪裁组件依赖的jquery.Jcrop第三方库，该库不能被独立使用或被其他组件依赖，故将其通过 @include scripts/jquery.Jcrop.js 进行引入，见下图所示：
 ##### ![image](images/include.png)
+
